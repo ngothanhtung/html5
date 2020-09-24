@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Profile</title>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      background-color: #332c38;
+      font-family: 'Lato', sans-serif;
+    }
+
+    #home {
+      background-color: #332c38;
+    }
+
+    /* AVATAR */
+    div.avatar-container {
+      border: 4px #f64c72 solid;
+      border-radius: 24px;
+      height: 300px;
+      width: 300px;
+    }
+
+    img.avatar {
+      border-radius: 16px;
+      height: 300px;
+      width: 300px;
+      margin-top: -24px;
+      margin-left: -24px;
+    }
+
+    #about {
+      height: 60vh;
+      background-color: white;
+    }
+
+    .my-bg-red {
+      background-color: #f64c72;
+    }
+
+    .my-text-red {
+      color: #f64c72;
+      letter-spacing: 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="home" class="flex flex-col h-screen">
+    <nav class="flex justify-center items-center h-16">
+      <ul class="flex flex-row list-none font-bold text-lg text-white">
+        <li class="w-40 text-center"><a href="#">Home</a></li>
+        <li class="w-40 text-center"><a href="#">About</a></li>
+        <li class="w-40 text-center"><a href="#">Projects</a></li>
+        <li class="w-40 text-center"><a href="#">Blogs</a></li>
+        <li class="w-40 text-center"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="flex flex-row h-full items-center justify-center">
+      <div>
+        <div class="pr-6">
+          <div class="h-1 w-20 my-bg-red mb-1"></div>
+          <h1 class="text-5xl text-white font-bold">I'm Tony Woo</h1>
+          <h4 class="text-lg my-text-red">Full Stack Web Developer And Designer</h4>
+          <button class="mt-6 my-bg-red hover:text-black text-white text-sm font-bold py-2 px-6 rounded shadow">
+            CONTACT ME
+          </button>
+        </div>
+      </div>
+      <div>
+        <div class="ml-12 avatar-container">
+          <img class="avatar" src="./images/tony-woo.jpg" />
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="about" class="flex">
+
+  </section>
+</body>
+
+</html>
